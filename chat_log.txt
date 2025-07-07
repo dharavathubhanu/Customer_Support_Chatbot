@@ -1,0 +1,39 @@
+User: Hi
+Bot: Greetings!
+----------------------------------------
+User: Hi
+Bot: Hello! How can I help you?
+----------------------------------------
+User: hi
+Bot: Hi there!
+----------------------------------------
+User: I want a refund
+Bot: Sure, I can help you with a refund. Can you please provide the order ID?
+----------------------------------------
+User: 456789
+Bot: Thank you! Your refund request for order ID 456789 has been received and is being processed. (I noticed: [('order_id', '456789')])
+----------------------------------------
+User: Hi
+Bot: Hello! How can I help you?
+----------------------------------------
+User: where is my order ?
+Bot: Could you please share your order ID so I can check the status?
+----------------------------------------
+User: 456789
+Bot: Hello! How can I help you? (I noticed: [('order_id', '456789')])
+----------------------------------------
+User: refund
+Bot: Sure, I can help you with a refund. Can you please provide the order ID?
+----------------------------------------
+User: 456789
+Bot: Thank you! Your refund request for order ID 456789 has been received and is being processed. (I noticed: [('order_id', '456789')])
+----------------------------------------
+User: Thank you
+Bot: We are open from 9 AM to 6 PM, Monday to Friday.
+----------------------------------------
+User: All right
+Bot: Greetings!
+----------------------------------------
+User: Have a good day
+Bot: Hello! How can I help you?
+----------------------------------------

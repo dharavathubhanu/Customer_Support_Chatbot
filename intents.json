@@ -1,0 +1,88 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+              "Hi",
+              "Hello",
+              "Hey",
+              "Good morning",
+              "Good evening",
+              "Hi there",
+              "Hey there",
+              "Greetings",
+              "What's up?",
+              "Howdy"
+            ],
+            "responses": [
+              "Hello! How can I help you?",
+              "Hi there! What can I do for you?",
+              "Greetings! How can I assist you today?"
+            ]
+          }
+          ,
+      {
+        "tag": "working_hours",
+        "patterns": [
+          "What are your working hours?",
+          "When are you open?",
+          "Opening hours please",
+          "What time do you open?",
+          "When do you close?",
+          "Can I come in at 5 PM?",
+          "Give me the schedule",
+          "Store hours",
+          "Business hours"
+        ],
+        "responses": [
+          "We are open from 9 AM to 6 PM, Monday to Friday."
+        ]
+      }
+      
+      
+      ,
+      {
+        "tag": "location",
+        "patterns": ["Where are you located?", "What is your address?", "Location please", "Office location"],
+        "responses": ["Our office is located at 123 Main Street, Hyderabad."]
+      },
+      {
+        "tag": "order_status",
+        "patterns": ["Where is my order?", "Track my order", "Order status please"],
+        "responses": ["Can you please provide your order ID?", "I'm checking your order. One moment please."]
+      },
+      {
+        "tag": "refund",
+        "patterns": [
+          "I want a refund",
+          "Refund my product",
+          "Can I get my money back?",
+          "Give me a refund",
+          "Refund my item",
+          "I need my money back",
+          "refund this",
+          "I want a return",
+          "I don't want this anymore",
+          "refund my thing",
+          "how do I get refund"
+        ],
+        "responses": [
+          "Refunds are processed within 5-7 business days to your original payment method.",
+          "Please share your order ID so we can initiate the refund."
+        ]
+      }
+      ,
+      {
+        "tag": "fallback",
+        "patterns": [],
+        "responses": ["Sorry, I didn’t understand that. Can you please rephrase?"]
+      },
+      {
+        "tag": "follow_up",
+        "patterns": ["how long does it take", "what about that", "when will it happen"],
+        "responses": ["Can you clarify what you're referring to?"]
+      }
+      
+    ]
+  }
+  
