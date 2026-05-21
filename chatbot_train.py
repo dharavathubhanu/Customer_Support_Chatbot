@@ -55,4 +55,4 @@ with open("vectorizer.pkl", "wb") as f:
 with open("label_encoder.pkl", "wb") as f:
     pickle.dump(encoder, f)
 
-print("✅ Model training complete and files saved.")
+print(" Model training complete and files saved.")

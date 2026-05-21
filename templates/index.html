@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    #chat_area {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 400px;
+      height: 400px;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+    }
+    .user-msg { color: blue; }
+    .bot-msg { color: green; }
+  </style>
+</head>
+<body>
+
+<h2>Customer Support Chatbot</h2>
+<div id="chat_area">
+  {% for msg in history %}
+    <p class="user-msg"><b>You:</b> {{ msg.user }}</p>
+    <p class="bot-msg"><b>Bot:</b> {{ msg.bot }}</p>
+  {% endfor %}
+</div>
+
+<input type="text" id="user_input" placeholder="Type your message...">
+<button onclick="send()">Send</button>
+
+<script>
+  function send() {
+    let userText = document.getElementById("user_input").value;
+    if (!userText) return;
+
+    fetch("/get?msg=" + encodeURIComponent(userText))
+      .then(res => res.text())
+      .then(botText => {
+        let chatArea = document.getElementById("chat_area");
+        chatArea.innerHTML += `<p class='user-msg'><b>You:</b> ${userText}</p>`;
+        chatArea.innerHTML += `<p class='bot-msg'><b>Bot:</b> ${botText}</p>`;
+        chatArea.scrollTop = chatArea.scrollHeight; // Auto scroll
+        document.getElementById("user_input").value = "";
+      });
+  }
+</script>
+
+</body>
+</html>

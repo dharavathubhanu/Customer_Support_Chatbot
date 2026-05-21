@@ -37,3 +37,9 @@ Bot: Greetings!
 User: Have a good day
 Bot: Hello! How can I help you?
 ----------------------------------------
+User: Hi
+Bot: Hello! How can I help you?
+----------------------------------------
+User: Hi
+Bot: Greetings!
+----------------------------------------

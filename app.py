@@ -36,5 +36,5 @@ def get_bot_response():
     return bot_text
 
 if __name__ == "__main__":
-    print("\n✅ Server running at: http://127.0.0.1:5000/\n")
+    print("\n Server running at: http://127.0.0.1:5000/\n")
     app.run(debug=True)

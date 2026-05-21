@@ -9,6 +9,9 @@ from ner_utils import extract_entities
 
 # Download required tokenizer
 nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # Initialize lemmatizer
 lemmatizer = WordNetLemmatizer()
